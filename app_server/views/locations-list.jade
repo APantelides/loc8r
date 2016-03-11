@@ -1,12 +1,32 @@
 extends layout
 
-#banner.page-header
+block content
+  #banner.page-header
+    .row
+      .col-lg-6
+        h1 Loc8r
+          small &nbsp;Find places to work with wifi near you!
   .row
-    .col-lg-6
-      h1 Loc8r
-        small &nbsp;Find places to work with wifi near you!
-.row
-  .col-cs-12.col-sm-8
-    p List area.
-  .col-xs-12.col-sm-4
-    p.lead Loc8r helps you find places to work when out and about.
+    .col-cs-12.col-sm-8
+      
+      .row.list-group
+        .col-xs-12.list-group-item
+          h4
+            a(href="/location") Starbucks
+            small &nbsp;
+              span.glyphicon.glyphicon-star
+              span.glyphicon.glyphicon-star
+              span.glyphicon.glyphicon-star
+              span.glyphicon.glyphicon-star-empty
+              span.glyphicon.glyphicon-star-empty
+            span.badge.pull-right.badge-default 100ft
+          p.address 1901 J Street, Sacramento, CA 95814
+          p
+            span.label.label-warning Hot Drinks
+            &nbsp;
+            span.label.label-warning Food
+            &nbsp;
+            span.label.label-warning Wifi
+            &nbsp;
+    .col-xs-12.col-sm-4
+      p.lead Loc8r helps you find places to work when out and about.
