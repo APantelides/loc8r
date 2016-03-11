@@ -4,8 +4,8 @@ module.exports.homelist = function(req, res, next) {
 
 /* Get location page */
 module.exports.locationInfo = function(req, res, next) {
-  res.render('index', { title: 'Location information' })};
+  res.render('location-info', { title: 'Location information' })};
 
 /* Get review page */
 module.exports.addReview = function(req, res, next) {
-  res.render('index', { title: 'Add review' })};
+  res.render('location-review-form', { title: 'Add review' })};
